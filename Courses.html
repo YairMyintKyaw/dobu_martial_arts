@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoBu Martial Arts</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="bootstrap-5.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./JavaScript/jquery.js"></script>
+    <script>
+      $(document).ready(() => {
+        $("#fitness_offering_content").load("./Classes_and_Training.html");
+        $(".fitness_offering_tab").click(function () {
+          // change the tab color
+          $(".fitness_offering_tab").css("background-color", "var(--primary)");
+          $(".fitness_offering_tab").css("color", "var(--secondary)");
+
+          $(this).css("background-color", "var(--secondary)");
+          $(this).css("color", "var(--primary)");
+
+          // change the content
+          if ($(this).data("tab") == "class_and_training")
+            $("#fitness_offering_content").load("./Classes_and_Training.html");
+          else if ($(this).data("tab") == "membership")
+            $("#fitness_offering_content").load("./Membership.html");
+          else $("#fitness_offering_content").load("./Timetable.html");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <div class="container-fluid">
+      <div class="row" style="height: 60px"></div>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="text-center mx-auto">
+            <h1 class="fs-2 fw-bold p-5">Fitness Offering</h1>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="d-flex border">
+            <div
+              class="fitness_offering_tab fs-5 text-center p-3"
+              data-tab="class_and_training"
+              style="background-color: var(--secondary); color: var(--primary)"
+            >
+              Special Courses & Training
+            </div>
+            <div
+              class="fitness_offering_tab fs-5 text-center p-3"
+              data-tab="membership"
+            >
+              Memberships
+            </div>
+            <div
+              class="fitness_offering_tab fs-5 text-center p-3"
+              data-tab="timetable"
+            >
+              Timetable
+            </div>
+          </div>
+        </div>
+        <div id="fitness_offering_content" class="py-5"></div>
+      </div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="bootstrap-5.3.1/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

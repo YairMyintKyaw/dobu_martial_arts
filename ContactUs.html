@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoBu Martial Arts</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="bootstrap-5.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./JavaScript/jquery.js"></script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <div class="container-fluid">
+      <section
+        class="row vh-100 justify-content-center align-items-center contact-us"
+      >
+        <div class="col-5">
+          <div class="w-75 mx-auto">
+            <h1 class="text-center fs-3 fw-bold mb-3 text-uppercase">
+              Contact us
+            </h1>
+            <form>
+              <div class="d-flex flex-column gap-3">
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    class="form-control py-2"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Michael Scrofield"
+                  />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    class="form-control py-2"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="michael@gmail.com"
+                  />
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    placeholder=""
+                    rows="4"
+                  ></textarea>
+                </div>
+                <button class="btn btn-black">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-5 p-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9637103171685!2d-80.89247532467736!3d35.702510628805506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885157285b1ae6d7%3A0x23735db8eaa5cc84!2s123%20N%20Main%20St%2C%20Troutman%2C%20NC%2028166%2C%20USA!5e0!3m2!1sen!2smm!4v1690657493003!5m2!1sen!2smm"
+            style="border: 0"
+            height="400"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="dobumaritalarts"
+            class="w-100 shadow"
+          ></iframe>
+        </div>
+      </section>
+      <section class="row justify-content-center mb-5 pb-5">
+        <div class="col-7">
+          <div class="text-center">
+            <h2 class="fs-4 fw-bold mb-4">Frequently Asked Questions</h2>
+          </div>
+          <div class="accordion" id="faq">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  1. What martial arts classes does DoBu Martial Arts offer?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                  DoBu Martial Arts offers a diverse range of martial arts
+                  classes, including Jiu-Jitsu, Karate, Judo, Muay Thai, and
+                  more. We also provide fitness training and self-defense
+                  courses to cater to various interests and fitness levels.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  2. Are there classes for beginners and children?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                  Yes, we welcome students of all ages and skill levels. We have
+                  specialized classes for beginners and children, where our
+                  experienced instructors provide a supportive and safe learning
+                  environment to help them build a strong foundation in martial
+                  arts.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  3. What are the benefits of practicing martial arts?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                  Practicing martial arts offers numerous benefits, including
+                  improved physical fitness, increased flexibility, enhanced
+                  self-discipline, and boosted self-confidence. It also helps
+                  develop essential life skills such as focus, respect, and
+                  resilience.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  4. How can I enroll in a class?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                  Enrolling in a class is easy. Simply visit our website or
+                  contact our front desk to check the class schedule and
+                  availability. You can then register online or in-person to
+                  secure your spot in the class.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  5. Do you offer private lessons?
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                  Yes, we offer private martial arts tuition for individuals
+                  seeking personalized attention or specific training goals. Our
+                  skilled instructors will tailor the lessons to your needs and
+                  preferences.
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="collapseSeven"
+                  >
+                    6. Are your instructors certified and experienced?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSeven"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body">
+                    Absolutely! Our instructors are highly skilled and certified
+                    in their respective martial arts disciplines. They possess
+                    years of experience and are committed to providing quality
+                    instruction and guidance to all students.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer id="footer"></footer>
+    <script src="bootstrap-5.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.1/js/bootstrap.esm.min.js"></script>
+  </body>
+</html>

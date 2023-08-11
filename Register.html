@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoBu Martial Arts</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="bootstrap-5.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./JavaScript/jquery.js"></script>
+  </head>
+
+  <body>
+    <header id="header"></header>
+    <div class="container-fluid">
+      <div class="row" style="height: 70px"></div>
+      <section
+        class="row vh-100 justify-content-center align-items-start sign-in"
+      >
+        <div class="col-4">
+          <h1 class="fs-3 fw-bold text-center mb-4">Register</h1>
+          <form>
+            <div class="d-flex flex-column justify-content-center gap-3">
+              <div>
+                <label for="name">Name</label>
+                <input
+                  class="form-control py-2"
+                  type="name"
+                  name="name"
+                  id="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  class="form-control py-2"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+              <div>
+                <label for="gender">Gender</label>
+                <select
+                  required
+                  class="form-select"
+                  name="gender"
+                  id="gender"
+                  aria-label="gender"
+                >
+                  <option selected value="">Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="membership">Select Membership</label>
+                <select
+                  required
+                  class="form-select"
+                  id="membership"
+                  name="membership"
+                  aria-label="membership"
+                >
+                  <option selected value="">Membership</option>
+                  <option value="Basic Membership">Basic Membership</option>
+                  <option value="Intermediate Membership">
+                    Intermediate Membership
+                  </option>
+                  <option value="Advanced Membership">
+                    Advanced Membership
+                  </option>
+                  <option value="Elite Membership">Elite Membership</option>
+                  <option value="Junior Membership">Junior Membership</option>
+                </select>
+              </div>
+              <div>
+                <label for="martial arts"
+                  >Which martial art do you interest?</label
+                >
+                <select
+                  required
+                  class="form-select"
+                  id="martial arts"
+                  name="martial arts"
+                  aria-label="martial arts"
+                >
+                  <option selected value="">Martial Art</option>
+                  <option value="Karate">Karate</option>
+                  <option value="Taekwondo">Taekwondo</option>
+                  <option value="Jiu-Jitsu">Jiu-Jitsu</option>
+                  <option value="Judo">Judo</option>
+                  <option value="Muay Thai">Muay Thai</option>
+                </select>
+              </div>
+
+              <div class="dynamic-form-section"></div>
+              <div id="inner-dynamic-form-section"></div>
+              <button class="btn btn-black" type="submit">Register</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer id="footer"></footer>
+    <script src="bootstrap-5.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="./JavaScript/Register.js"></script>
+  </body>
+</html>

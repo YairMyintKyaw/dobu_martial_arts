@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("../fonts/AvenirLTStd-Book.otf") format("opentype"),
+    url("../fonts/AvenirLTStd-Black.otf") format("opentype"),
+    url("../fonts/AvenirLTStd-Roman.otf") format("opentype");
+}
+* {
+  font-family: "AvenirLTStd";
+}
+
+:root {
+  --primary: #edf2f4;
+  --hoverText: #8d99ae;
+  --secondary: #2b2d42;
+  --red: #ef233c;
+  --deep_red: #d90429;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+.navbar {
+  background-color: var(--secondary);
+}
+
+.btn-black {
+  background-color: var(--secondary);
+  color: #edf2f4;
+}
+
+.btn-black:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: solid 1px #2b2d42;
+}
+
+.btn-white {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.btn-white:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: solid 1px var(--primary);
+}
+
+/* about us */
+
+.about-us {
+  background-color: var(--secondary);
+  color: var(--primary);
+  background-image: url("https://i.ibb.co/Xb5HPC2/background1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-section p {
+  text-align: justify;
+}
+
+.mission-and-vision {
+  height: 300px;
+  color: var(--secondary);
+}
+
+.instructor-overview {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.instructor-overview p,
+.courses-overview p {
+  text-align: justify;
+}
+
+.testimonial * {
+  color: var(--secondary);
+}
+
+.testimonial img:first-child {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: -50px;
+}
+
+.testimonial .quote {
+  width: 30px;
+}
+
+/* instructors */
+.instructor-hero-section {
+  color: var(--primary);
+  height: 80vh;
+  background: no-repeat center url("https://i.ibb.co/cQBhdmv/background5.jpg");
+  background-size: cover;
+}
+
+.instructor:nth-child(even) {
+  color: var(--secondary);
+  flex-direction: row-reverse;
+}
+.instructor:nth-child(odd) {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+/* facilities */
+.facilities-hero-section {
+  background: no-repeat center url("https://i.ibb.co/1Q1KSv9/facilities2.jpg");
+  background-size: cover;
+  color: var(--primary);
+  height: 80vh;
+  position: relative;
+}
+
+.facilities-hero-section::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.9) 100%)
+    repeat 0 0;
+  z-index: 1;
+}
+
+.facilities-hero-section > div {
+  z-index: 3;
+}
+
+.facilities img:first-child {
+  margin-bottom: 100px;
+}
+.facilities img:last-child {
+  margin-top: 100px;
+}
+
+.facilities:nth-child(even) {
+  color: var(--secondary);
+  flex-direction: row-reverse;
+}
+
+.facilities:nth-child(odd) {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.martial-arts:nth-child(even) {
+  background-color: var(--secondary);
+  color: var(--primary);
+  flex-direction: row-reverse;
+}
+
+.martial-arts:nth-child(odd) {
+  color: var(--secondarys);
+}
+
+/* contact us */
+.contact-us {
+  color: var(--secondary);
+}
+
+/* sign in */
+
+.sign-in {
+  color: var(--secondary);
+}
+.sign-in a {
+  color: var(--secondary);
+}
+
+/* courses */
+
+.fitness_offering_tab {
+  flex: 1;
+  cursor: pointer;
+}
+.class_and_training *:not(a) {
+  color: var(--secondary) !important;
+}
+
+/* martial arts */
+.martial-arts-hero-section {
+  height: 70vh;
+  background: no-repeat center
+    url("https://i.ibb.co/HhxwrPN/daniil-zanevskiy-v-Brw23-B9y-Q8-unsplash.jpg");
+  background-size: cover;
+  color: var(--primary);
+  position: relative;
+}
+.martial-arts-hero-section::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.9) 100%)
+    repeat 0 0;
+  z-index: 1;
+}
+
+/* site map */
+.site-map li {
+  list-style-type: none;
+}
+.site-map a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+.site-map a:hover {
+  font-weight: bold;
+}
+
+/* thank you */
+
+/* footer */
+.footer {
+  background-color: var(--secondary);
+}
+
+.footer h4 {
+  color: var(--primary);
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer div:first-child a,
+.footer address {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.footer div:first-child a:hover {
+  color: var(--hoverText);
+}
+
+.footer > div:last-child a {
+  color: var(--secondary);
+}
+
+.footer svg {
+  color: var(--primary);
+}
+
+.footer .copyright-notice {
+  color: var(--secondary);
+  background-color: var(--primary);
+}
